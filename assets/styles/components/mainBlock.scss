@@ -1,0 +1,93 @@
+.navigation {
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        & li {
+            list-style: none;
+            padding: 34px 0px 34px 0;
+            & a {
+                color: #fff;
+                font-size: 14px;
+                letter-spacing: 0.2px;
+                text-decoration: none;
+                transition: all 1s ease 0s;
+            }
+            & a:hover {
+                color: #c69c6d;
+                transition: all 1s ease 0s;
+            }
+        }
+    }
+}
+
+.main{
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrap {
+      width: 100%;
+      max-width: 1180px !important;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      @media(max-width:576px) {
+          padding-right: 30px;
+          padding-left: 30px;
+          }
+      }
+      &__container {
+          padding-top: 18%;
+          padding-left: 2%;
+          color: #fafafa;
+      }
+      &__container-horisontalLine {
+        width: 120px;
+        height: 2px;
+        display: inline-block;
+        text-align: center;
+        background-color: #c69c6d;
+    }
+    &__container-ticker {
+        line-height: 5em;
+    }
+    &__container-button {
+        line-height: 5em;
+        & a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #585858;
+            padding: 10px 30px 10px 30px;
+            border-radius: 30px;
+            transition: all 1s ease 0s;
+        }
+        & a:hover {
+            background-color: #c69c6d;
+            text-decoration: none;
+            color: #c2b19f;
+            transition: all 1s ease 0s;
+        }
+    }
+  }
+
+  .container {
+      & .logo{
+        display: flex;
+        align-items: center;
+        margin-top: 7%;
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
+      & p{
+        color: #fff;
+        text-decoration: none;
+      }
+      & span {
+        color: #c69c6d;
+      }
+      & a:hover{
+        text-decoration: none;
+        }
+  }

@@ -1,0 +1,37 @@
+.social {
+    box-shadow: #a2a2a2 1px 0 10px;
+    font-size: 2em;
+    font-weight: 700;
+    &__wrap {
+        width: 100%;
+        max-width: 1180px !important;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        height: 7vh;
+        align-items: center;
+        justify-content: center;
+        & a {
+            color: #747272;
+        }
+        & a:hover {
+            text-decoration: none;
+            color: #747272;
+        }
+        & .row {
+            width: 100%;
+        }
+    }
+}
+
+.item {
+    text-align: center;
+}
+.item:nth-child(1) {
+    border-right: 1px solid #d7d1d8;
+}
+.item:nth-child(3) {
+    border-right: 1px solid #d7d1d8;
+}

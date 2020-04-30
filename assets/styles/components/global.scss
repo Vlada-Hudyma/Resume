@@ -1,0 +1,25 @@
+body {
+    font-family: "futura-demic-reg", Arial, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    letter-spacing: .1em;
+    padding: 0;
+    background: white;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    /*background-color: rgba(148, 136, 136, 0.9);*/
+    z-index: 2;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content {
+    z-index: 1;
+}

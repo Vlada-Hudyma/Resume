@@ -1,0 +1,119 @@
+.ability {
+    position: relative;
+    height: 66vh;
+    padding-top: 60px;
+    padding-bottom: 46px;
+    background-color: rgba(255, 255, 255, 0.85);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrap {
+        width: 100%;
+        max-width: 1180px !important;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        color: rgb(63, 63, 63);
+        font-size: 3rem;
+    }
+}
+
+.ability::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(218, 213, 213, 0.5);
+}
+
+.items {
+    & p {
+        text-align: center;
+        font-weight: 500;
+    }
+    &__main p {
+        text-align: center;
+    }
+}
+
+.round {
+    min-height: 255px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    & p {
+        position: absolute;
+        top: 59%;
+        left: 50%;
+        margin-top: -50px;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        color: white;
+        font-weight: 100;
+        background: #5a5550;
+        border-radius: 50px;
+        padding: 0;
+        width: 93px;
+        height: 93px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 1s ease;
+    }
+    & span {
+        display: block;
+        color: black;
+        font-size: 17px;
+        margin-top: 24px;
+        text-align: center;
+        & i {
+            color: black;
+            font-size: 22px;
+            margin-right: 7px;
+
+        }
+    }
+
+}
+
+  .round p:hover {
+    background-color: rgba(#c69c6d, 0);
+    border-radius: 50%;
+    color: #5a5550;
+    transition: all 1s ease;
+    &::after{
+      content: ' ';
+      border-radius: 50%;
+      border: 2px #c69c6d solid;
+      background: #c69c6d;
+      position: absolute;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      transition: all 1s ease;
+      animation: grow 2s infinite;
+      padding: 0;
+    }
+    
+  }
+
+  @keyframes grow {
+  from {
+    transform: scale(0,0);
+    opacity: 1;
+    padding: 0;
+  }
+  to {
+    transform: scale(1.5,1.5);
+    opacity: 0;
+    padding: 0;
+  }
+  }
